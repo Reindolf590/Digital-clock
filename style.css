@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: violet;
+}
+.container{
+    width: 90%;
+    margin: 100px auto;
+    min-height: 100vh;
+    position: relative;
+
+}
+.clock{
+    background: cornflowerblue;
+    width: 800px;
+    height: 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.clock span{
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    position: relative;
+    width: 100px;
+}
+.clock span::after{
+    
+    font-size: 20px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#hrs::after{
+    content: 'HOURS';
+}
+#min::after{
+    content: 'MIN';
+}
+#sec::after{
+    content: 'SEC';
+}
